@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ca3d4cc-3b7a-4543-96e9-a8d289d4e5e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" />
-    </list>
+    <list default="true" id="4ca3d4cc-3b7a-4543-96e9-a8d289d4e5e1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
