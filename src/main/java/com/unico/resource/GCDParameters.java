@@ -1,9 +1,9 @@
 package com.unico.resource;
 
-import com.kjetland.dropwizard.activemq.ActiveMQSender;
 import com.unico.json.PairParameters;
 import com.unico.service.GcdService;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
@@ -19,6 +19,7 @@ public class GCDParameters {
     }
 
     @POST
+    @RolesAllowed("EXECUTOR")
     public Response push(PairParameters pairParams) {
         try {
             service.saveParameters(pairParams);

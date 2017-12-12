@@ -10,6 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-core:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-auth:1.2.2" level="project" />
     <orderEntry type="library" name="Gradle: com.github.roskart.dropwizard-jaxws:dropwizard-jaxws:1.0.4" level="project" />
     <orderEntry type="library" name="Gradle: com.kjetland.dropwizard:dropwizard-activemq:0.5.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-broker:5.15.2" level="project" />

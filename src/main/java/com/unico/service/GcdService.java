@@ -6,7 +6,6 @@ import com.unico.dao.GcdDao;
 import com.unico.json.PairParameters;
 
 import javax.jms.*;
-import java.io.IOException;
 import java.math.BigInteger;
 import java.util.List;
 

@@ -21,6 +21,7 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'io.dropwizard:dropwizard-core:1.2.2'
+    compile 'io.dropwizard:dropwizard-auth:1.2.2'
     compile group: 'com.github.roskart.dropwizard-jaxws', name: 'dropwizard-jaxws', version: '1.0.4'
     compile group: 'com.kjetland.dropwizard', name: 'dropwizard-activemq', version: '0.5.1'
     compile group: 'org.apache.activemq', name: 'activemq-broker', version: '5.15.2'

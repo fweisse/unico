@@ -1,15 +1,11 @@
 package com.unico.soap;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.unico.json.PairParameters;
 import com.unico.service.GcdService;
 
-import javax.jms.*;
+import javax.annotation.security.RolesAllowed;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebService(
@@ -32,12 +28,14 @@ public class GcdSoapService implements GcdSoapServiceInt {
 
     @Override
     @WebMethod
+    @RolesAllowed("EXECUTOR")
     public int gcd() {
         return service.calculateCurrentGcd();
     }
 
     @Override
     @WebMethod
+    @RolesAllowed("READER")
     public List<Integer> list() {
         return service.getGcdHistory();
 
@@ -45,6 +43,7 @@ public class GcdSoapService implements GcdSoapServiceInt {
 
     @Override
     @WebMethod
+    @RolesAllowed("READER")
     public int gcdSum() {
         return service.getGcdHistorySum();
     }
