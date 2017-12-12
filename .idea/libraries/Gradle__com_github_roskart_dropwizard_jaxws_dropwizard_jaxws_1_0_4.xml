@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.roskart.dropwizard-jaxws:dropwizard-jaxws:1.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.roskart.dropwizard-jaxws/dropwizard-jaxws/1.0.4/2634ef8c56e8d8300b6b8ad850907acd0739360a/dropwizard-jaxws-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.roskart.dropwizard-jaxws/dropwizard-jaxws/1.0.4/8578d7317487807738f93641a2d50f27c1f3b0c/dropwizard-jaxws-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

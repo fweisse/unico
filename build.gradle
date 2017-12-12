@@ -1,0 +1,51 @@
+plugins {
+    id "java"
+    id "application"
+    id "org.flywaydb.flyway" version "4.0.3"
+}
+
+// Use Java 8 by default
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+// UTF-8 should be standard by now. So use it!
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+group 'com.unico'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.dropwizard:dropwizard-core:1.2.2'
+    compile group: 'com.github.roskart.dropwizard-jaxws', name: 'dropwizard-jaxws', version: '1.0.4'
+    compile group: 'com.kjetland.dropwizard', name: 'dropwizard-activemq', version: '0.5.1'
+    compile group: 'org.apache.activemq', name: 'activemq-broker', version: '5.15.2'
+    runtime 'org.apache.activemq:activemq-kahadb-store:5.11.1'
+    runtime group: 'com.h2database', name: 'h2', version: '1.4.196'
+    compile 'io.dropwizard:dropwizard-jdbi:1.2.2'
+    testCompile  'io.dropwizard:dropwizard-testing:1.2.2'
+}
+// Configure flyway
+flyway {
+    url = 'jdbc:h2:file:./gcdDB'
+    user = 'sa'
+}
+// Configure the run task to start the Dropwizard service
+run {
+    args 'server', './config.yml'
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14.1'
+}
+
