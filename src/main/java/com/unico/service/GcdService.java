@@ -40,22 +40,46 @@ public class GcdService {
         return dao.getCalculatedGCD().stream().reduce(0, (a, b) -> a + b );
     }
     private PairParameters getParametersFromQueue()  {
+        Connection jmsCon = null ;
+        Session jmsSession = null;
+        MessageConsumer consumer = null ;
+
         try {
-            Connection jmsCon = jmsConnectionFactory.createConnection();
-            Session jmsSession = jmsCon.createSession(false, Session.CLIENT_ACKNOWLEDGE);
-            MessageConsumer consumer = jmsSession.createConsumer(jmsSession.createQueue(queueName));
+            jmsCon = jmsConnectionFactory.createConnection();
+            jmsSession = jmsCon.createSession(false, Session.CLIENT_ACKNOWLEDGE);
+            consumer = jmsSession.createConsumer(jmsSession.createQueue(queueName));
             jmsCon.start();
             TextMessage message = (TextMessage) consumer.receive(maxTime);
             PairParameters params = mapper.readValue(message.getText(), PairParameters.class);
             message.acknowledge();
-            consumer.close();
-            jmsSession.close();
             jmsCon.stop();
-            jmsCon.close();
             return params;
         }
         catch (Exception e) {
             throw new RuntimeException(e);
+        }
+        finally {
+            if (consumer != null)
+                try {
+                    consumer.close();
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+            if (jmsSession != null)
+                try {
+                    jmsSession.close();
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+            if (jmsCon != null) {
+                try {
+                    jmsCon.close();
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
         }
     }
 

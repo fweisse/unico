@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ca3d4cc-3b7a-4543-96e9-a8d289d4e5e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_dropwizard_dropwizard_auth_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthorizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/unico/auth/User.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/TestWs.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db.data" afterPath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db.redo" afterPath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db.redo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/lock" afterPath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcdDB.mv.db" afterPath="$PROJECT_DIR$/gcdDB.mv.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/unico/Application.class" afterPath="$PROJECT_DIR$/out/production/classes/com/unico/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/unico/json/PairParameters.class" afterPath="$PROJECT_DIR$/out/production/classes/com/unico/json/PairParameters.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/unico/resource/GCDParameters.class" afterPath="$PROJECT_DIR$/out/production/classes/com/unico/resource/GCDParameters.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/unico/service/GcdService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/unico/service/GcdService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/unico/soap/GcdSoapService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/unico/soap/GcdSoapService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/gcd-services_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/gcd-services_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/gcd-services_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/gcd-services_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db-1.log" afterPath="$PROJECT_DIR$/activemq-data/localhost/KahaDB/db-1.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/Config.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/json/PairParameters.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/json/PairParameters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/resource/GCDParameters.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/resource/GCDParameters.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/unico/soap/GcdSoapService.java" afterPath="$PROJECT_DIR$/src/main/java/com/unico/soap/GcdSoapService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -88,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnicoAuthenticator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnicoAuthenticator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthenticator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -144,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GcdService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GcdService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="39" column="69" lean-forward="false" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+            <state relative-caret-position="504">
+              <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1172#1173#0" expanded="true" />
@@ -615,7 +591,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/createParameters.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/createTableGCD.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/unico/dao/GcdDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/unico/auth/Authenticator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthorizer.java" />
@@ -624,6 +599,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthenticator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unico/soap/GcdSoapService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unico/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java" />
       </list>
     </option>
   </component>
@@ -680,6 +656,15 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="unico" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcd-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcd-services" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unico" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcd-services" type="b2602c69:ProjectViewProjectNode" />
@@ -1225,21 +1210,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="39" column="69" lean-forward="false" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1261,8 +1232,8 @@
         <state relative-caret-position="250">
           <caret line="76" column="51" lean-forward="false" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
           <folding>
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1301,6 +1272,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -1311,12 +1292,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/auth/UnicoAuthenticator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unico/service/GcdService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="504">
+          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
           </folding>
         </state>
       </provider>
