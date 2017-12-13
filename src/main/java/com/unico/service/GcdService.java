@@ -50,6 +50,9 @@ public class GcdService {
             consumer = jmsSession.createConsumer(jmsSession.createQueue(queueName));
             jmsCon.start();
             TextMessage message = (TextMessage) consumer.receive(maxTime);
+            if (message == null) {
+                throw new RuntimeException("No current gdc parameters arrive in " + maxTime/1000 + " seconds");
+            }
             PairParameters params = mapper.readValue(message.getText(), PairParameters.class);
             message.acknowledge();
             jmsCon.stop();
